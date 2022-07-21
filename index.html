@@ -1,1 +1,63 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "style.css" type="text/css">
+    <title>FORMS!</title>
+</head>
+<body>
 
+    <form  action="/my-handling-form-page" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" value = "name">
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email">
+            </li>
+            <li>
+                <label for="msg">Text: </label>
+                <textarea name="user_msg" id="msg" cols="30" rows="10"></textarea>
+            </li>
+            <li class = "button">
+                <button type =  "submit">Send your message!</button>
+            </li>
+        </ul>
+    </form>
+
+    <form action="">
+        <fieldset>
+            <legend>Dating Search</legend>
+            <p>
+                <input type="radio" name ="size" id = "size_1" value = "small">
+                <label for="size_1">Small</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value = "medium">
+                <label for="size_2">Medium</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value = "large">
+                <label for="size_3">Large</label>
+            </p>
+        </fieldset>
+    </form>
+    
+    <form>
+        <p>
+          <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
+          <label for="taste_1">I like cherry</label>
+        </p>
+        <p>
+          <input type="checkbox" id="taste_2" name="taste_banana" value="banana">
+          <label for="taste_2">I like banana</label>
+        </p>
+      </form>
+      
+
+</body>
+</html>
